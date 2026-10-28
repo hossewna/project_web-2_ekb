@@ -1,0 +1,46 @@
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: lightgray;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .navLink{
+        width: 1200px;
+        max-width: 1200px;
+        height: 100%;
+        display: flex;
+        flex-flow:  row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        .item{
+            width: fit-content;
+            padding: 3px 10px;
+            height: 100%;
+            box-sizing: border-box;
+            .itemLink{
+                display: block;
+               width: 100%;
+               padding: 3px 10px;
+               box-sizing: border-box;
+               height: 100%; 
+               line-height: 40px;
+               text-decoration: none;
+               color: rgb(49, 31, 31);
+               transition: 200ms;
+               &:hover{
+                background-color: rgb(80, 59, 59);
+                color: whitesmoke;
+               }
+            }
+        }
+        
+    }
+}
+.menuMobile{
+    display: none;
+}
+.open{
+    display: none;
+}

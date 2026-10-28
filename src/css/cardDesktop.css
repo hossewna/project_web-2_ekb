@@ -1,0 +1,110 @@
+.cards__parent {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding-top: 2rem;
+  margin-bottom: 10rem;
+  .pen-title {
+    width: fit-content;
+    margin: 5px auto;
+  }
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 40%;
+    position: relative;
+    padding: 40px;
+    color: white;
+    justify-self: center;
+    transition: all 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    background-color: #3b3b3b;
+    overflow: hidden;
+    border-radius: 20px;
+    &:hover {
+      transform: scale(1.02);
+      padding: 50px;
+    }
+    .card-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+      justify-content: space-between;
+      .bottom h2 {
+        font-size: 20px;
+      }
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.8rem;
+      .name {
+        font-size: 1.8rem;
+      }
+      .date {
+        font-weight: bold;
+        opacity: 0.8;
+      }
+    }
+
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .bookmark {
+        margin-left: 5rem;
+        border: 2px solid white;
+        padding: 0.7rem;
+        border-radius: 50%;
+        .bookmark-icn {
+          fill: white;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: -1;
+    .bg-img {
+      height: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+  }
+
+  .shadow {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: -15px;
+    z-index: -2;
+    border-radius: 20px;
+    filter: blur(15px);
+    .shadow-img {
+      margin-top: 3rem;
+      object-fit: cover;
+    }
+  }
+}
